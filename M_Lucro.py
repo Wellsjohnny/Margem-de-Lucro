@@ -9,7 +9,7 @@ class App:
         master.geometry("350x150")
         master.configure(bg='#3d405b')
         
-       # Adicionando o icone na janela
+            # Adicionando o icone na barra de título da janela
             #  retorna caminho completo do diretório onde o script está localizado, sem o nome do próprio script.
         script_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
             # Junta o caminho onde está o diretório com a pasta imgs onde está o icone "calculator-icon.ico"
@@ -37,6 +37,7 @@ class App:
         self.label3.grid(row=3, column=0, padx=5)
         self.campo3.grid(row=3, column=1, padx=10)
         
+        # cria um espaço entre o campo3 e o botão "Calcular"
         empty_label = tk.Label(root, text="",bg='#3d405b')
         empty_label.grid(row=4, column=0, padx=10, pady=20)
        
